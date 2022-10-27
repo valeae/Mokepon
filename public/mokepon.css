@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Londrina+Shadow&display=swap");
+
+body {
+  font-family: "Chilanka", cursive;
+  background-image: url("https://i.pinimg.com/originals/91/bb/a7/91bba7f9842a1e47570dbe34b4d23357.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seleccionar-mokepon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-family: "Londrina Shadow", cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 30px;
+}
+
+.tarjetas,
+.botones-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+/*.tarjetas p {
+  color: transparent;
+}*/
+
+.tarjeta-mokepon {
+  width: 250px;
+  height: 200px;
+  background: linear-gradient(45deg, black, transparent);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-mokepon img {
+  width: 135px;
+}
+
+.tarjeta-mokepon:hover {
+  cursor: pointer;
+}
+
+.boton-seleccionar {
+  width: 240px;
+  height: 50px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, black, transparent);
+  color: white;
+  font-family: "Chilanka", cursive;
+  margin-top: 15px;
+}
+
+.boton-seleccionar:hover {
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  border: 3px solid white;
+  color: white;
+  font-size: 25px;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  background: linear-gradient(45deg, black, transparent);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100px;
+  color: white;
+  font-family: "Chilanka", cursive;
+}
+
+.boton-de-ataque:hover {
+  cursor: pointer;
+}
+
+#mensaje {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+#boton-reiniciar {
+  background: linear-gradient(45deg, black, transparent);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100px;
+  color: white;
+  font-family: "Chilanka", cursive;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  gap: 50px;
+}
+
+#vidas-mokepon,
+#vidas-contrincante {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+#mokepon-jugador,
+#mokepon-contrincante {
+  font-family: "Londrina Shadow", cursive;
+  font-size: 35px;
+}
+
+#tarjeta-jugador,
+#tarjeta-contrincante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  background: linear-gradient(45deg, black, transparent);
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, black, transparent);
+  color: white;
+  font-family: "Chilanka", cursive;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 560px) {
+  .tarjetas,
+  .botones-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
